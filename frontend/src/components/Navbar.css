@@ -1,0 +1,96 @@
+/* Navbar.css */
+.navbar {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px; /* 가로 길이 확대 */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .navbar-logo a {
+    font-size: 36px; /* 로고 크기 증가 */
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* 메뉴 항목 간격 증가 */
+  }
+  
+  .navbar-menu li {
+    display: inline;
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 22px; /* 메뉴 항목 글씨 크기 증가 */
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #007bff; /* 메뉴 항목 호버 색상 */
+  }
+  
+  .navbar-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .navbar-login, .navbar-register {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 22px; /* 로그인 버튼 글씨 크기 증가 */
+    font-weight: 500;
+  }
+  
+  .navbar-search {
+    font-size: 22px; /* 검색 아이콘 크기 증가 */
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .navbar-submenu {
+    background-color: #f8f9fa;
+    padding: 15px 60px; /* 가로 길이 확대 */
+    border-top: 1px solid #ddd;
+  }
+  
+  .navbar-submenu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* 서브 메뉴 항목 간격 증가 */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-submenu li {
+    display: inline;
+  }
+  
+  .navbar-submenu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px; /* 서브 메뉴 항목 글씨 크기 증가 */
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-submenu li a:hover {
+    color: #007bff; /* 서브 메뉴 항목 호버 색상 */
+  }
+  

@@ -1,0 +1,105 @@
+.slider-container {
+  width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.categories-container a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.categories-container a:hover {
+  background-color: #ddd;
+}
+
+.home-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  flex: 1 1 calc(25% - 40px); /* 기본적으로 4개의 칼럼 */
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  height: 200px;
+}
+
+.post-title {
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1200px) {
+  .post {
+    flex: 1 1 calc(33.3333% - 40px); /* 화면이 더 작아지면 3개의 칼럼 */
+  }
+}
+
+@media (max-width: 800px) {
+  .post {
+    flex: 1 1 calc(50% - 40px); /* 태블릿 사이즈에서는 2개의 칼럼 */
+  }
+}
+
+@media (max-width: 500px) {
+  .post {
+    flex: 1 1 calc(100% - 40px); /* 작은 화면에서는 1개의 칼럼 */
+  }
+}
+
